@@ -1,4 +1,4 @@
-FROM keymetrics/pm2:latest-jessie
+FROM keymetrics/pm2:18-jessie
 
 RUN pm2 install pm2-logrotate && \
     pm2 set pm2-logrotate:max_size 1G && \
