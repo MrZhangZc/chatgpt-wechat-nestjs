@@ -19,7 +19,6 @@ COPY package.json yarn.lock nest-cli.json tsconfig.build.json tsconfig.json /app
 COPY src/ /app/src
 
 RUN yarn install \
-    && yarn cache clean \
     && yarn build
 
 COPY up.yml /app/
