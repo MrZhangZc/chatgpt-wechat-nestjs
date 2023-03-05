@@ -5,11 +5,12 @@ services:
     container_name: chatgpt_wechat
     image: zzcimau/chatgpt_wechat
     environment:
-      - PORT=
-      - CHATGPT_API_URL=
+      - PORT=3456
+      - CHATGPT_API_URL=https://api.openai.com
       - OPENAI_API_KEY=
-      - REPLY_FRIEND=
-      - REPLY_GROUP=
+      - REPLY_FRIEND=true
+      - REPLY_GROUP=true
+      - GROUPS=
     ports:
     - 3456:3456
     volumes:
