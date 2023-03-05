@@ -1,0 +1,16 @@
+version: "2.4"
+
+services:
+  game_assistant:
+    container_name: chatgpt_wechat
+    image: zzcimau/chatgpt_wechat
+    environment:
+      - PORT=
+      - CHATGPT_API_URL=
+      - OPENAI_API_KEY=
+      - REPLY_FRIEND=
+      - REPLY_GROUP=
+    ports:
+    - 3456:3456
+    volumes:
+    - /home/log:/var/log/chatgpt_wechat/

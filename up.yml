@@ -1,0 +1,8 @@
+apps:
+  - name: chatgpt_wechat
+    script: dist/main.js
+    instances: 1
+    exec_mode: cluster
+    max_memory_restart: 1024M
+    watch: false
+    out_file: /var/log/chatgpt_wechat/out.log
