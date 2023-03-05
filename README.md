@@ -9,7 +9,7 @@
 1. 下载项目中的docker-compose.yml文件
 2. 添加相关参数
 - PORT: 项目启动地址
-- CHATGPT_API_URL: openai api服务地址 默认https://api.openai.com，有时可能，可建立国内域名代理亲测有效
+- CHATGPT_API_URL: openai api服务地址 默认 https://api.openai.com 有时可能无法访问使用国内域名进行代理亲测有效
 - OPENAI_API_KEY: 在openai 官网申请的的api key
 - REPLY_FRIEND: 是否使用chatgpt回复私聊好友，true或者false
 - REPLY_GROUP: 是否使用chatgpt回复群组@的消息，true或者false
